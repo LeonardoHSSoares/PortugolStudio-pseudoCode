@@ -120,10 +120,4 @@ programa
 			escreva(linha)
 		}
 	}
-	funcao quebraLinha()
-	{
-		cadeia linha = "\n"
-		escreva(linha)	
-			
-	}
 }
