@@ -49,6 +49,7 @@ programa
 			escreva("*O resultado será apresentado do maior valor ao menor valor\n")
 			escreva("*Digite valores numéricos inteiros. (Ex: -10, 10, -7 ou 7)\n")
 			desenhaLinha()
+			escreva("\n")
 			desenhaLinha()
 			escreva("\nDigite valor de A: ")
 			leia(A)
