@@ -1,3 +1,9 @@
+/* Questao 5 enunciado: Faça um algoritmo que calcule e exiba o salário de um professor. Sabe-se que o valor da hora/aula segue a tabela abaixo:
+Professor Nível 1 R$ 15,50 por hora/aula
+Professor Nível 2 R$ 17,80 por hora/aula
+Professor Nível 3 R$ 23,00 por hora/aula
+*/
+
 programa
 {
 	
@@ -28,14 +34,3 @@ real sal
 		
 	}
 }
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 373; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
