@@ -8,9 +8,9 @@ programa
 {
 	
      const real sal[3] =  {15.50,17.80,23.00}
-     real salarioBruto
+ 	real salarioBruto
 	cadeia prof
-	inteiro opcao,ht
+	inteiro opcao, ht
 	
 	funcao inicio()
 	{
@@ -39,11 +39,10 @@ programa
 	}
 	funcao determinarNivel()
 	{
-		
 		se (opcao	== 1)
 		{
 			salarioBruto = (ht*sal[0]) * 22
-			escreva("Nível 1 R$ 15,50 por hora/aula "+salarioBruto)
+			escreva("Nível 1 R$ 15,50 por hora/aula ", salarioBruto)
 		}
 		se (opcao	== 2)
 		{
@@ -56,21 +55,7 @@ programa
 			escreva("Nível 3 R$ 23,00 por hora/aula "+salarioBruto)
 		}
 		
-				
-		
 		 
 	}
 }
 	
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 613; 
- * @DOBRAMENTO-CODIGO = [29, 34];
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {sal, 10, 16, 3}-{salarioBruto, 11, 10, 12}-{prof, 12, 8, 4}-{opcao, 13, 9, 5}-{ht, 13, 15, 2};
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
