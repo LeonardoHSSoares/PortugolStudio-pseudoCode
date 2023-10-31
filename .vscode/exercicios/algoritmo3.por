@@ -18,7 +18,7 @@ programa
 			escreva("O número negativo agora ficou positivo =",res)
 			
 		}
-		senao se(N > 0)
+		senao se(N >= 0)
 		{
 			escreva("O numero ",N," ja é positivo")	
 		}
