@@ -7,30 +7,70 @@ Professor Nível 3 R$ 23,00 por hora/aula
 programa
 {
 	
-real sal
+     const real sal[3] =  {15.50,17.80,23.00}
+     real salarioBruto
 	cadeia prof
-	inteiro ht,nv
+	inteiro opcao,ht
+	
 	funcao inicio()
+	{
+		coletaNome()
+		limpa()
+		coletaHt()
+		limpa()
+		escreva("1) para nv 1\n")
+		escreva("2) para nv 2\n")
+		escreva("3) para nv 3\n")
+		escreva("4) para SAIR\n")
+		leia(opcao)
+		limpa()
+		
+		determinarNivel()
+	}
+	funcao coletaNome()
 	{
 		escreva("Professor digite o seu nome: ")
 		leia(prof)
-		
-		escreva("Digite  a sua carga horaria: ")
+	}
+	funcao coletaHt()
+	{
+		escreva("Quantas horas você trabalha por dia: ")
 		leia(ht)
-
-		escreva("digite  seu nivel: ")
-		leia(nv)
-
-	escolha(nv){
-
-			caso 1:
-				escreva(ht * nv)
-			pare
-			caso 1: escreva(1)
-			pare
-			caso contrario: escreva("contrario")
-			pare
+	}
+	funcao determinarNivel()
+	{
+		
+		se (opcao	== 1)
+		{
+			salarioBruto = (ht*sal[0]) * 22
+			escreva("Nível 1 R$ 15,50 por hora/aula "+salarioBruto)
+		}
+		se (opcao	== 2)
+		{
+			salarioBruto = (ht*sal[1]) * 22
+			escreva("Nível 2 R$ 17,80 por hora/aula "+salarioBruto)
+		}
+		se (opcao	== 3)
+		{
+			salarioBruto = (ht*sal[2]) * 22
+			escreva("Nível 3 R$ 23,00 por hora/aula "+salarioBruto)
 		}
 		
+				
+		
+		 
 	}
 }
+	
+/* $$$ Portugol Studio $$$ 
+ * 
+ * Esta seção do arquivo guarda informações do Portugol Studio.
+ * Você pode apagá-la se estiver utilizando outro editor.
+ * 
+ * @POSICAO-CURSOR = 613; 
+ * @DOBRAMENTO-CODIGO = [29, 34];
+ * @PONTOS-DE-PARADA = ;
+ * @SIMBOLOS-INSPECIONADOS = {sal, 10, 16, 3}-{salarioBruto, 11, 10, 12}-{prof, 12, 8, 4}-{opcao, 13, 9, 5}-{ht, 13, 15, 2};
+ * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
+ */

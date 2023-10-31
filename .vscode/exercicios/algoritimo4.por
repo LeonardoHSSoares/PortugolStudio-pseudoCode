@@ -9,7 +9,7 @@ programa
 {
 	inclua biblioteca Matematica--> m
 	
-	inteiro bimestre
+	
 	real nota[5], MD
 	cadeia nome
 	logico masc = falso, fem = falso, loop = verdadeiro
@@ -65,9 +65,13 @@ programa
 				escreva("*******************************************************\n")
 	
 			}
-		geraRelatorio()
+			se(loop == verdadeiro)
+			{
+				geraRelatorio()	
+			}
 			
 		}
+		
 	}
 	funcao real calculaMedia()
 	{
@@ -77,11 +81,11 @@ programa
 	}
 	funcao coletaNota()
 	{
-		para(bimestre = 1; bimestre <= 4; bimestre++)
+		para(inteiro i = 1; i <= 4; i++)
 		{
 			desenhaLinha()
-			escreva("\nDigite a nota do ",bimestre,"º Bimestre:  ")	
-			leia(nota[bimestre])
+			escreva("\nDigite a nota do ",i,"º Bimestre:  ")	
+			leia(nota[i])
 	
 		}
 		limpa()
@@ -167,8 +171,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2326; 
- * @DOBRAMENTO-CODIGO = [33, 20, 18, 71, 79, 77, 90, 98, 88, 115, 134, 108, 106, 156, 154];
+ * @POSICAO-CURSOR = 1674; 
+ * @DOBRAMENTO-CODIGO = [83, 94, 102, 92, 119, 138, 112, 110, 160, 158];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
