@@ -1,16 +1,21 @@
+/* Questao 2 enunciado  : Elaborar um programa que efetue a entrada dos valores de medida do peso de 4 produtos. O programa deve mostrar o maior peso fornecido. */
+
+
 programa
 {
-	real peso[5]
+	
+real peso[5]
 	cadeia produto[5]
 	inteiro pos = 1, maior
 	
 	funcao inicio()
-	{	
+	{
+	
 		
 		escreva("Olá Mundo\n")
 		coletaProduto()
 		coletaPeso()
-		escreva(verificaMaior())
+		verificaMaior()
 		
 	
 	}
@@ -35,34 +40,23 @@ programa
 			
 		}
 	}
-	funcao inteiro verificaMaior()
+	funcao verificaMaior()
 	{
 		maior = peso[1]
 		
-		se(maior < peso[2])
+		se(peso[2] > maior)
 		{
 			maior = peso[2]
-			
-		}senao se(maior < peso[3])
+		}	
+		se(peso[3] > maior)
 		{
 			maior = peso[3]
-			
-		}senao se(maior < peso[4])
+		}	
+		se(peso[4] > maior)
 		{
 			maior = peso[4]	
 		}
-		retorne maior	
+		escreva(maior)
 	}
 	
 }
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 70; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
