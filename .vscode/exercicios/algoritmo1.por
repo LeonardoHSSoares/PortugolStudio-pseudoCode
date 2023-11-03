@@ -1,3 +1,6 @@
+/*Questao 1 enunciado: Elaborar um programa que efetue a entrada dos valores de medida do peso de 4 produtos. O programa deve mostrar o maior peso fornecido. 
+*/
+
 programa
 {
 	
@@ -9,7 +12,7 @@ programa
      {
 		escreva("******************************************************")
 		escreva("\nPrograma guarda a medida do peso de 4 produtos")
-		escreva("\nAo final irá o maior peso fornecido.\n")
+		escreva("\nAo final mostrará o maior peso fornecido.\n")
 		escreva("******************************************************\n")
 		desenhaLinha()
 		coletaProduto()
