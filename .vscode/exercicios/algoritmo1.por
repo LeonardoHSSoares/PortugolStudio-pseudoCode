@@ -59,15 +59,3 @@ programa
  	}
    
 }
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 121; 
- * @DOBRAMENTO-CODIGO = [7, 19, 17, 28, 38, 36, 33, 49];
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {peso, 4, 6, 4}-{maiorPeso, 4, 15, 9}-{produto, 5, 8, 7}-{maiorProduto, 5, 20, 12}-{indice, 6, 18, 6};
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
