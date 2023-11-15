@@ -10,13 +10,9 @@ programa
 {
     funcao inicio()
     {
-        // Declarando variáveis
         inteiro contador = 1
         real numero, soma = 0.0, mediaAritmetica = 0.0, mediaPonderada = 0.0, maior = 0.0, menor = 0.0
 
-   
-
-        // Loop para cadastrar 5 números
         para(inteiro i = 1; i <=5; i++)
         {
             escreva("Digite o ", contador,"º número: ")
@@ -24,19 +20,16 @@ programa
             contador = contador + 1
             limpa()
 
-            // Atualizando a soma
             soma = soma + numero
 
-            // Atualizando a média ponderada
             mediaPonderada = mediaPonderada + (numero * contador)
 		
-		  // Calculando a média aritmética
-		  mediaAritmetica = soma / 5
+		    mediaAritmetica = soma / 5
+ 
+	       
+	        mediaPonderada = mediaPonderada / 15
 
-	       // Calculando a média ponderada
-	       mediaPonderada = mediaPonderada / 15
-
-            // Verificando o maior e menor
+            
             se(contador == 1)
             {
                 maior =  numero
@@ -54,7 +47,6 @@ programa
             }
         }
 
-        // Exibindo os resultados
         escreva("A) Média Aritmética = ", mediaAritmetica,"\n")
         escreva("B) Média Ponderada = ", mediaPonderada,"\n")
         escreva("C) Soma = ", soma,"\n")
