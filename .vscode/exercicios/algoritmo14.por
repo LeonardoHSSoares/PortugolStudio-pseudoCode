@@ -16,11 +16,7 @@ programa
 		coletaMedias()
 		
 	escreva("C) Soma = ", somar(media),"\n")
-        /*escreva("A) Média Aritmética = ", mediaAritmetica,"\n")
-        escreva("B) Média Ponderada = ", mediaPonderada,"\n")
         
-        escreva("D) Maior: = ", maior,"\n")
-        escreva("E) Menor = ", menor,"\n")*/
     }
     funcao coletaMedias()
     {
