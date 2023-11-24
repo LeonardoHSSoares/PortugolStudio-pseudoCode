@@ -8,51 +8,78 @@ e)Menor
 
 programa
 {
+    inteiro contador = 1
+    real media[5], soma = 0.0
+
     funcao inicio()
     {
-        inteiro contador = 1
-        real numero, soma = 0.0, mediaAritmetica = 0.0, mediaPonderada = 0.0, maior = 0.0, menor = 0.0
-
-        para(inteiro i = 1; i <=5; i++)
-        {
-            escreva("Digite o ", contador,"º número: ")
-            leia(numero)
-            contador = contador + 1
-            limpa()
-
-            soma = soma + numero
-
-            mediaPonderada = mediaPonderada + (numero * contador)
+		coletaMedias()
 		
-		    mediaAritmetica = soma / 5
- 
-	       
-	        mediaPonderada = mediaPonderada / 15
-
-            
-            se(contador == 1)
-            {
-                maior =  numero
-            }
-            senao
-            {
-                se (numero > maior)
-                {
-                    maior = numero
-                }
-                se (numero < menor)
-                {
-                    menor = numero
-                }
-            }
-        }
-
-        escreva("A) Média Aritmética = ", mediaAritmetica,"\n")
+	escreva("C) Soma = ", somar(media),"\n")
+        /*escreva("A) Média Aritmética = ", mediaAritmetica,"\n")
         escreva("B) Média Ponderada = ", mediaPonderada,"\n")
-        escreva("C) Soma = ", soma,"\n")
+        
         escreva("D) Maior: = ", maior,"\n")
-        escreva("E) Menor = ", menor,"\n")
+        escreva("E) Menor = ", menor,"\n")*/
     }
+    funcao coletaMedias()
+    {
+    		para(inteiro i = 1; i <5; i++)
+          {
+          	escreva("Digite o ", contador,"º número: ")
+          	leia(media[i])
+           	contador += 1
+               limpa()
+          }
+    }
+    
+    funcao real somar(real m[])
+    {
+		para(inteiro i = 0; i < 5; i++)
+		{
+			soma += m[i]
+		}
+	
+	retorne soma
+    }
+    
+    funcao mediaAritmetica()
+    {
+
+  
+    }
+    
+    funcao mediaPonderada()
+    {
+    	
+    }
+    
+    funcao verificaMaior(inteiro m[])
+    {
+    		para(inteiro x = 0; x < 5; x++)
+    		{
+    			para(inteiro y = 0; y < 4; y++)
+    			{
+    				se(m[x] > m[y+1])
+    				{
+    					trocar(m, y, y+1 )
+    				}
+    			}
+    		}
+    }
+    
+    funcao verificaMenor()
+    {
+    	
+    }
+    
+    funcao trocar(inteiro m[], inteiro a, inteiro b)
+    {
+	    	m[a] = m[a] + m[b]
+	    	m[b] = m[a] - m[b]
+	    	m[a] = m[a] - m[b]
+    }
+	
 }
 /* $$$ Portugol Studio $$$ 
  * 
