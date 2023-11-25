@@ -8,19 +8,22 @@ e)Menor
 
 programa
 {
-    inteiro contador = 1
-    real media[5], soma = 0.0
+    inteiro cont = 0, contador = 1
+    real media[5], soma = 0.0, mediaAritmeticaTotal = 0.0, mediaPonderadaTotal = 0.0, maior, menor
 
     funcao inicio()
     {
-		coletaMedias()
+	coletaMedias()
 		
-	escreva("C) Soma = ", somar(media),"\n")
-        
+	     escreva("A) Média Aritmética = ", mediaAritmetica(media),"\n")
+	     escreva("B) Média Ponderada = ", mediaPonderada(media),"\n")
+	     escreva("C) Soma = ", somar(media),"\n")
+	     escreva("D) Maior: = ", verificaMaior(media),"\n")
+		 escreva("E) Menor = ", verificaMenor(media),"\n")
     }
     funcao coletaMedias()
     {
-    		para(inteiro i = 1; i <5; i++)
+    		para(inteiro i = 0; i <5; i++)
           {
           	escreva("Digite o ", contador,"º número: ")
           	leia(media[i])
@@ -39,37 +42,62 @@ programa
 	retorne soma
     }
     
-    funcao mediaAritmetica()
+    funcao  real mediaAritmetica(real m[])
     {
-
-  
+		para(inteiro i = 0; i < 5; i++)
+          {
+          	mediaAritmeticaTotal += m[i]
+          	cont = 5
+          }
+          mediaAritmeticaTotal /= cont
+          
+	retorne mediaAritmeticaTotal
     }
     
-    funcao mediaPonderada()
-    {
-    	
+    funcao real mediaPonderada(real m[])
+    {	
+    		para(inteiro i = 1; i <5; i++)
+          {
+          	mediaPonderadaTotal += m[i] * i
+          	cont += i
+          } 
+          mediaPonderadaTotal /= cont   
+          retorne mediaPonderadaTotal            	
     }
     
-    funcao verificaMaior(inteiro m[])
+    funcao real verificaMaior(real m[])
     {
     		para(inteiro x = 0; x < 5; x++)
     		{
     			para(inteiro y = 0; y < 4; y++)
     			{
-    				se(m[x] > m[y+1])
+    				se(m[y] > m[y+1])
     				{
     					trocar(m, y, y+1 )
     				}
     			}
+    		maior = m[4]
     		}
+	retorne maior
     }
     
-    funcao verificaMenor()
+    funcao real verificaMenor(real m[])
     {
-    	
+    		para(inteiro x = 4; x > 0; x--)
+    		{
+    			para(inteiro y = 0; y > 4; y--)
+    			{
+    				se(m[y] < m[y-1])
+    				{
+    					trocar(m, y, y-1 )
+    				}
+    			}
+    		menor = m[0]
+    		}
+    	retorne menor
     }
     
-    funcao trocar(inteiro m[], inteiro a, inteiro b)
+    funcao trocar(real m[], inteiro a, inteiro b)
     {
 	    	m[a] = m[a] + m[b]
 	    	m[b] = m[a] - m[b]
