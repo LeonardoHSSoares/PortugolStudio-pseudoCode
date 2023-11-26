@@ -19,7 +19,7 @@ programa
 	     escreva("B) Média Ponderada = ", mediaPonderada(media),"\n")
 	     escreva("C) Soma = ", somar(media),"\n")
 	     escreva("D) Maior: = ", verificaMaior(media),"\n")
-		 escreva("E) Menor = ", verificaMenor(media),"\n")
+		escreva("E) Menor = ", verificaMenor(media),"\n")
     }
     funcao coletaMedias()
     {
