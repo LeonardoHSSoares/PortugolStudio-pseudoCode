@@ -1,3 +1,5 @@
+exercicios treinamento algoritmos
+
 1) Elaborar um programa que efetue a entrada dos valores de medida do peso de 4 produtos. O programa deve mostrar o maior peso fornecido. 
 _________________________________________________________________
 
